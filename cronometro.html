@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Cronômetro</title>
+        <link rel="shortcut icon" href="assets/images/clock.png">
       <link rel="stylesheet" href="assets/style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,10 +11,10 @@
     <body>
         <header id="relogio">
             <nav>
-                <h1 class="topo">Relógio</h1>
+                <h1 class="topo">Cronômetro</h1>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="cronometro.html">Relógio </a></li>
+                    <li><a href="cronometro.html">Cronômetro </a></li>
                 </ul>
             </nav>
         </header>
@@ -20,7 +22,13 @@
         </script>
     <main>
         <section>
-
+            <div class="botoes">
+                <button onclick="start()">Iniciar</button>
+                <button onclick="pause()">Pausar</button>
+                <button onclick="reset()">Reset</button>
+                <p id="contador">00:00:00:00</p>
+            
+            </div>   
         </section>
         <footer>ZapZap - 4002 8922</footer>
      </main>  
