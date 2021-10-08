@@ -1,8 +1,8 @@
-"use stritc"
-var hr = 0
-var min = 0
-var sec = 0
-var cen = 0
+"use strict"
+var hours = 0
+var minutes = 0
+var seconds = 0
+var hundredth = 0
 const tempo = 10
 var cron;
 function start() {
@@ -12,27 +12,30 @@ function pause() {
     clearInterval(cron)
 }
 function reset() {
-    clearInterval(cron)
+    pause()
     document.getElementById('contador').innerText ="00:00:00:00"
-  cen=0
-  sec=0
-  min=0
-  hr=0
+    hundredth=0
+    seconds=0
+    minutes=0
+    hours=0
 }
 function timer() {
-    cen++
-    if (cen==100){
-        cen=0
-        sec++
+    hundredth++
+    if (hundredth==100){
+        hundredth=0
+        seconds++
     }
-    if (sec==60){
-        sec=0
-        min++
+
+    if (seconds==60){
+        seconds=0
+        minutes++
     }
-    if(min==60){
-        min=0
-        hr++
+
+    if(minutes==60){
+        minutes=0
+        hours++
     }
-    var format= (hr<10?'0'+hr:hr)+":"+(min<10?'0'+min:min)+":"+(sec<10?'0'+sec:sec)+":"+(cen<10?'0'+cen: cen)
+
+    const format = `${hours.padStart(2, '0')}:${minutes.padStart(2, '0')}:${seconds.padStart(2, '0')}:${hundredth.padStart(2,'0')}`
     document.getElementById('contador').innerText = format
 }

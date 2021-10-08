@@ -3,23 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: silver;
     font-family: 'Source Sans Pro', sans-serif;
-    margin:opx;
+    margin:0px;
 }
+
 .botoes{
     margin-top: 30px;
     height: 100%;
     padding: 10px;
     text-align: center;
 }
+
 button{
     padding: 10px;
     border: none;
     font-size:30px;
     border-radius: 25px;
 }
+
 button:hover{
     background-color: rgb(95, 95, 96);
     cursor: pointer;
@@ -30,6 +34,7 @@ li{
     padding: 10px;
     list-style: none;
 }
+
 a{
     font-weight: bold;
     border-radius: 15%;
@@ -37,24 +42,29 @@ a{
     text-decoration: none;
     color:rgb(29, 29, 29);
 }
+
 nav{
     background-color:rgb(42, 72, 90);
 }
+
 section{
     height: 100%;
     background-color: silver;
 }
+
 a:hover{
     padding-top: 10px;
     padding-bottom:10px;
     background-color: rgb(55, 123, 128);
 }
+
 h1{ 
     color: rgb(184, 212, 203);
     padding: 30px;
     background-color:rgb(26, 52, 77) ;
     font-size: 60px;
 }
+
 footer{
     position: fixed;
     bottom: 0px;
@@ -63,17 +73,19 @@ footer{
     color: white;
     font-size: 15px;
     width: 100%;
-
 }
-#contador{
+
+#contador {
     display: block;
     font-size: 80px;
     background-color: silver;
 }
+
 p{
     text-align: center;
     font-size: 30px;
 }
+
 #titulo{
     color: black;
     text-align: center;
