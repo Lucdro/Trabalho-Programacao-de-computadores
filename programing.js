@@ -3,7 +3,7 @@ var hr = 0
 var min = 0
 var sec = 0
 var cen = 0
-var tempo = 10
+const tempo = 10
 var cron;
 function start() {
     cron = setInterval(timer, tempo)
